@@ -1,0 +1,14 @@
+{
+    "name": "yinguohai/test",
+    "description": "project",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "yinguohai",
+            "email": "smart_apple_8@sina.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
