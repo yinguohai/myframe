@@ -1,16 +1,33 @@
 # Composer 构建一个简单的框架
 
-##框架结构
-* controller --控制器
-    1. Bootstrap.php  -- 应用控制器
-    2. View.php       -- 视图渲染器
-* helpers  --  常用函数库
-    1. functions.php  --常用函数文件
-* vendor  -- composer  自动加载库
-*view  --  模板文件目录
-    1. index.html --一个模板文件
-* index.php --  框架启动入口
-* composer.json -- composer的配置文件
+## 框架结构
+```
+├── controller  #控制器目录
+│   └── Index.php
+├── core 
+│   ├── Bootstrap.php #启动控制器
+│   └── View.php #视图渲染器
+├── helpers
+│   └── functions.php #常用函数
+|── view
+|    └── index.html  #默认视图文件
+├── index.php  #项目入口文件
+├── composer.json  #composer  配置文件
+├── LICENSE
+├── README.md
+├── vendor  #composer  自动加载文件库
+│   ├── autoload.php
+│   └── composer
+│       ├── autoload_classmap.php
+│       ├── autoload_files.php
+│       ├── autoload_namespaces.php
+│       ├── autoload_psr4.php
+│       ├── autoload_real.php
+│       ├── autoload_static.php
+│       ├── ClassLoader.php
+│       └── LICENSE
+
+```
 
 ## composer.json 
 ```
