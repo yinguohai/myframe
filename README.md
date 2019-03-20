@@ -74,3 +74,37 @@ return array(
     'controller\\' => array($baseDir . '/controller'),
 );
 ```
+
+## 获取下载文件内容API说明
+
+### 获取文件名
+~~~
+http://xxx.xxx.xxx.xxx:83/?c=product&a=list&t=20190111
+~~~
+#### 参数说明:
+|参数|说明|必填|默认值|备注|
+|:---:|:---:|:---:|:---:|:---|
+| c     |控制器  |   是  | 无 |取值: product,electricity|
+| a     |方法    |   否  | index |     |
+| t     |时间    |   否  | date('Ymd')|  |
+
+---
+
+### 获取内容
+~~~ 
+http://xxx.xxx.xxx.xxx:83?c=product&a=select&f=product_20181220.xlsx&start=29132&length=3&t=20181220
+~~~
+#### 参数说明:
+|参数|说明|必填|默认值|备注|
+|:---:|:---:|:---:|:---:|:---|
+| c     |控制器  |   是  | 无 |取值:product,purcharse,inventory,electricity|
+| a     |方法    |   否  | index |  |
+|start  |起始位置 |  否  |   1   |  |
+|length | 长度   |  否   | 5000 |  |
+| t     |时间    |   否  | date('Ymd')|  |
+|f      | 文件名 |  是   | 无    |  |
+
+
+
+
+
